@@ -1,0 +1,36 @@
+Esercizio 2.1: Scrivere un programma TuttiPositiviPari che chiede all’utente di inserire una se-
+quenza di interi (chiedendo prima quanti numeri voglia inserire) e poi, al termine dell’inserimento
+dell’intera sequenza, stampa "Tutti positivi e pari" se i numeri inseriti sono tutti positivi e pari,
+altrimenti stampa "NO". Risolvere questo esercizio senza usare array.
+
+
+
+Esercizio 2.2: Scrivere un programma ContinuaFino che chiede all’utente di inserire una sequenza di
+interi. Il programma continua a chiedere all’utente di inserire valori fintanto che i valori inseriti soddisfano
+almeno una delle seguenti condizioni:
+• è negativo e divisibile per 2
+• è positivo e divisibile per 3
+Al termine il programma stampa la somma di tutti i valori inseriti escluso quello ha violato le condizioni.
+Risolvere questo esercizio senza usare array.
+
+
+
+Esercizio 2.3: Scrivere un programma PositivoNegativo che chiede all’utente di inserire una sequenza
+di interi terminata quando l’utente immette il valore 0 e poi stampa "OK" se la sequenza contiene un
+valore positivo seguito da uno negativo, altrimenti stampa il messaggio "NO". A vostra scelta, la stampa
+del messaggio "OK" può interrompere o meno l’inserimento dei valori. Risolvere questo esercizio senza
+usare array.
+
+
+
+Esercizio 2.4: Scrivere un programma MediaMultipliDiTre che chiede all’utente di inserire una se-
+quenza di interi (chiedendo prima quanti numeri voglia inserire) e poi stampa la media di tutti i numeri
+inseriti che siano divisibili per tre. Per esempio, se si immettono i valori 5, 8, 9, 12, 7, 6 ,1 il
+risultato stampato dovrà essere 9. Risolvere questo esercizio senza usare array.
+
+
+
+Esercizio 2.5: Scrivere un programma Ripetizioni che chiede all’utente di inserire una sequenza di
+caratteri (chiedendo prima quanti caratteri voglia inserire) e li ristampa man mano che vengono inseriti.
+L’intero procedimento (chiedere quanti caratteri voglia inserire, leggere i caratteri e man mano stamparli)
+dovrà essere ripetuto 5 volte. Risolvere questo esercizio senza usare array.
