@@ -106,6 +106,103 @@ public class FunzioneArrayList {
 
 	
 	
+	public ArrayList<Double> moltiplicaArrayByNumber(ArrayList<Double> vettArrayList , double number){
+		
+		
+		if(number < 0 || number > 1)
+			return null;
+		
+		ArrayList<Double> vettRis = new ArrayList<>();
+		
+		
+		for (Double elemento : vettArrayList) 
+			vettRis.add(elemento * number);
+		
+		
+		
+		return vettRis;
+	}
+	
+	
+	
+	public ArrayList<Double> moltiplicaArrayByNumber2(ArrayList<Double> vettArrayList , double number){
+		
+		
+		if(number < 0 || number > 1)
+			return null;
+		
+		for (int i = 0; i < vettArrayList.size(); i++) 
+			vettArrayList.set(i, vettArrayList.get(i) * number); 
+		
+		return vettArrayList;
+	}
+	
+	
+	
+	
+	
+	
+	/**
+	 * 
+	 * 
+	 * Creare una funzione che prenda in ingresso un arraylist
+	 * di interi e ritorna true se il vettore è formato da tutti elementi "primi".
+	 * 
+	 * 
+	 * Es di numero primo 1 , 3 , 5 , 7 
+	 * 
+	 * 
+	 * cosa significa primo ? significa che ha al massimo 2 divisori....
+	 * 
+	 * 
+	 * 
+	 * 
+	 * Es  :     [ 1 , 3 , 7 , 11 ] ===> true
+	 * 
+	 * 			 [ 1 , 3 , 14 , 11 ] ===> false
+	 * 
+	 * 
+	 * Nota : potrebbe essere utile creare una funzione ausiliaria che 
+	 * prende in ingresso un numero e ritorna true oppure false 
+	 * , se è primo oppure no ...
+	 * 
+	 */
+	
+	
+	
+	public boolean isAllNumberInArrayPrime(ArrayList<Integer> arr) {
+		
+		for (Integer i : arr)
+			if( ! isPrimeNumber(i))
+				return false;
+		
+		
+		return true;
+	}
+	
+	
+	
+	
+	public boolean isPrimeNumber(int numero) {
+		
+			
+		int cont = 0;
+		
+		
+		// 4   i = 1     1 <  4/2 ==>   1 / 2 
+		//     i = 2     2 < 2 
+		
+		for(int i = 1 ; i <= numero / 2 ; i++ )
+			if(numero % i== 0)
+				cont++;
+		
+		return  ++cont > 2 ? false : true;
+	}
+	
+	
+	
+	
+	
 	
 	
 }
