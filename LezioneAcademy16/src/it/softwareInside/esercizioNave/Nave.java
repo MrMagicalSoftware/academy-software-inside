@@ -144,11 +144,17 @@ public class Nave {
 		//this.personeAbordo.clear();
 		
 		
-		for(Persona persona : this.personeAbordo) {
-			
-			if( ! ( persona instanceof Capitano))
-				this.personeAbordo.remove(persona);
-			
+//		for(Persona persona : this.personeAbordo) {
+//			
+//			if( ! ( persona instanceof Capitano))
+//				this.personeAbordo.remove(persona);
+//			
+//		}
+//		
+		
+		for (int i = 0; i <  this.personeAbordo.size(); i++) {
+			if( ! ( this.personeAbordo.get(i)  instanceof Capitano  ))
+				this.personeAbordo.remove(i);
 		}
 		
 		
@@ -162,10 +168,8 @@ public class Nave {
 		if(persona == null)
 			return null;
 		
-		
 		if( this.personeAbordo.remove(persona))
 			return persona;
-		
 		
 		return null;
 	}

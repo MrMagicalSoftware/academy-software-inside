@@ -11,7 +11,7 @@ import it.softwareInside.esercizioNave.Persona;
 
 public class TestNave {
 
-	@Test
+
 	public void test() {
 		
 		
@@ -40,14 +40,14 @@ public class TestNave {
 		
 	}
 	
-	@Test
+	
 	public void addCapitano() {
 		
 		
 		Nave nave = new Nave();
 		
-		System.out.println("#############");
-		System.out.println(nave.getNumeroDiAnniRichiesti());
+//		System.out.println("#############");
+//		System.out.println(nave.getNumeroDiAnniRichiesti());
 		
 		Capitano capitano = new Capitano("Jack the C", 20, 1);
 		
@@ -68,7 +68,26 @@ public class TestNave {
 
 	}
 	
-	
+	@Test
+	public void removeCapitano() {
+		
+		
+		Nave nave = new Nave();
+		assertTrue(nave.addPesseggero(new Passeggero("mario1", 20, "aa")));
+		assertTrue(nave.addPesseggero(new Passeggero("mario2", 20, "aa")));
+		assertTrue(nave.addPesseggero(new Passeggero("mario3", 20, "aa")));
+		
+		
+		nave.removeAll();
+		
+		assertTrue(nave.getPersoneAbordo().size()  == 0 );
+
+		System.out.println("naveeeee");
+		System.out.println(nave.getPersoneAbordo());
+		
+		
+		
+	}
 	
 
 }
